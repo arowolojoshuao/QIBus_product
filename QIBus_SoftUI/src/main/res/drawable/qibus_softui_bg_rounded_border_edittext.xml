@@ -1,0 +1,12 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffff"/>
+            <corners android:radius="5dp" />
+            <stroke
+                android:width="@dimen/QIBus_softui_bg_1dp"
+                android:color="#E2E2E2"
+                />
+        </shape>
+    </item>
+</selector>

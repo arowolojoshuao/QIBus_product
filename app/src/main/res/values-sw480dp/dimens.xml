@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="design_bottom_navigation_active_text_size"
+           tools:ignore="PrivateResource">12sp</dimen>
+
+    <dimen name="font_mlarge">22sp</dimen>
+    <dimen name="font_large">18sp</dimen>
+    <dimen name="font_medium">14sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+
+
+</resources>

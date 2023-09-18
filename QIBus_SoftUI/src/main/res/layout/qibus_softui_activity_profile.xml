@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/IQBUSSoftUIScreenBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/qibus_softui_bg_toolbar"
+        android:theme="@style/Toolbar"
+        app:contentInsetStart="0dp"
+        app:layout_collapseMode="pin"
+        app:titleTextColor="@color/QIBus_softui_white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/QIBus_softui_txt_todo"
+                android:padding="@dimen/QIBus_softui_spacing_medium"
+                android:src="@drawable/qibus_softui_ic_left_arrow_white" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/QIBus_softui_spacing_medium"
+                android:layout_toEndOf="@+id/ivBack"
+                android:fontFamily="@font/googlesansextrabold"
+                android:text="@string/QIBus_softui_profile_settings"
+                android:textColor="@color/QIBus_softui_white"
+                android:textSize="@dimen/QIBus_softui_font_mlarge" />
+
+            <include layout="@layout/qibus_softui_layout_addnotification" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        style="@style/IQBUSSoftUIScreenBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:id="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="@dimen/QIBus_softui_bg_1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/QIBus_softui_spacing_large"
+                        android:layout_toEndOf="@+id/ivProfileImage" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/ivProfileImage"
+                        android:layout_marginStart="@dimen/QIBus_softui_spacing_large" />
+
+
+                    <ImageView
+                        android:id="@+id/ivProfileImage"
+                        android:layout_width="@dimen/QIBus_softui_profile_width_150dp"
+                        android:layout_height="@dimen/QIBus_softui_profile_height_150dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/QIBus_softui_spacing_medium"
+                        android:elevation="@dimen/QIBus_softui_spacing_small"
+                        android:src="@drawable/qibus_softui_ic_profile" />
+
+                    <ImageView
+                        android:id="@+id/ivAddProfile"
+                        android:layout_width="@dimen/QIBus_softui_spacing_mlarge"
+                        android:layout_height="@dimen/QIBus_softui_spacing_mlarge"
+                        android:layout_above="@id/view2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="-10dp"
+                        android:layout_marginBottom="@dimen/QIBus_softui_spacing_large"
+                        android:layout_toStartOf="@+id/view"
+                        android:background="@drawable/qibus_softui_bg_circle"
+                        android:elevation="@dimen/QIBus_softui_spacing_small"
+                        android:padding="@dimen/QIBus_softui_spacing_6dp"
+                        android:src="@drawable/qibus_softui_ic_pencil_line" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relative"
+                    android:background="@drawable/qibus_softu_ic_card_new">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/QIBus_softui_spacing_small"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/QIBus_softui_spacing_small"
+                            android:layout_marginTop="@dimen/QIBus_softui_spacing_medium"
+                            android:layout_marginEnd="@dimen/QIBus_softui_spacing_medium"
+                            android:fontFamily="@font/googlesansbold"
+                            android:paddingStart="@dimen/QIBus_softui_spacing_small"
+                            android:paddingEnd="@dimen/QIBus_softui_spacing_small"
+                            android:text="@string/QIBus_softui_title_edit_your_name"
+                            android:textColor="@color/QIBus_softui_textHeader"
+                            android:textSize="@dimen/QIBus_softui_font_large" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/QIBus_softui_spacing_medium"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/QIBus_softui_spacing_small">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/QIBus_softui_spacing_large"
+                                android:layout_weight="2.5"
+                                android:fontFamily="@font/googlesansregular"
+                                android:text="@string/QIBus_softui_lbl_first_name"
+                                android:textColor="@color/QIBus_softui_textChild"
+                                android:textSize="@dimen/QIBus_softui_font_large" />
+
+                            <EditText
+                                android:id="@+id/edFirstName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="@dimen/QIBus_softui_spacing_small"
+                                android:layout_marginEnd="@dimen/QIBus_softui_spacing_small"
+                                android:layout_weight="5"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/googlesansregular"
+                                android:hint="@string/QIBus_softui_hint_enter_first_name"
+                                android:inputType="text"
+                                android:text="@string/QIBus_softui_txt_user_name"
+                                android:textColor="@color/QIBus_softui_textChild"
+                                android:textSize="@dimen/QIBus_softui_font_large" />
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/QIBus_softui_viewheight"
+                            android:layout_margin="@dimen/QIBus_softui_spacing_medium"
+                            android:background="@color/QIBus_softui_view_color"
+                            android:paddingStart="@dimen/QIBus_softui_spacing_medium"
+                            android:paddingEnd="@dimen/QIBus_softui_spacing_medium" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+
+                            android:padding="@dimen/QIBus_softui_spacing_small">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/QIBus_softui_spacing_large"
+                                android:layout_weight="2.5"
+                                android:fontFamily="@font/googlesansregular"
+                                android:text="@string/QIBus_softui_lbl_last_name"
+                                android:textColor="@color/QIBus_softui_textChild"
+                                android:textSize="@dimen/QIBus_softui_font_large" />
+
+
+                            <EditText
+                                android:id="@+id/edLastName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="@dimen/QIBus_softui_spacing_small"
+                                android:layout_marginEnd="@dimen/QIBus_softui_spacing_small"
+                                android:layout_weight="5"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/googlesansregular"
+                                android:hint="@string/QIBus_softui_hint_enter_last_name"
+                                android:inputType="text"
+                                android:text="@string/QIBus_softui_text_user_lastname"
+                                android:textColor="@color/QIBus_softui_textChild"
+                                android:textSize="@dimen/QIBus_softui_font_large" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/QIBus_softui_viewheight"
+                            android:layout_margin="@dimen/QIBus_softui_spacing_medium"
+                            android:background="@color/QIBus_softui_view_color"
+                            android:paddingStart="@dimen/QIBus_softui_spacing_medium"
+                            android:paddingEnd="@dimen/QIBus_softui_spacing_medium" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/QIBus_softui_spacing_medium"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/QIBus_softui_spacing_small">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/QIBus_softui_spacing_large"
+                                android:layout_weight="2.5"
+                                android:fontFamily="@font/googlesansregular"
+                                android:text="@string/QIBus_softui_lbl_gender"
+                                android:textColor="@color/QIBus_softui_textChild"
+                                android:textSize="@dimen/QIBus_softui_font_large" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5">
+
+                                <Spinner
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:entries="@array/QIBus_softui_gender"
+                                    android:spinnerMode="dropdown" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/card2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card"
+                    android:background="@drawable/qibus_softu_ic_card_new">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/QIBus_softui_spacing_small"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/QIBus_softui_spacing_small"
+                            android:layout_marginTop="@dimen/QIBus_softui_spacing_medium"
+                            android:layout_marginEnd="@dimen/QIBus_softui_spacing_medium"
+                            android:fontFamily="@font/googlesansbold"
+                            android:paddingStart="@dimen/QIBus_softui_spacing_small"
+                            android:paddingEnd="@dimen/QIBus_softui_spacing_small"
+                            android:text="@string/QIBus_softui_title_edit_your_contact"
+                            android:textColor="@color/QIBus_softui_textHeader"
+                            android:textSize="@dimen/QIBus_softui_font_large" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/QIBus_softui_spacing_medium"
+                            android:padding="@dimen/QIBus_softui_spacing_small">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/QIBus_softui_spacing_large"
+                                android:layout_weight="1.5"
+                                android:fontFamily="@font/googlesansregular"
+                                android:text="@string/QIBus_softui_lbl_email"
+                                android:textColor="@color/QIBus_softui_textChild"
+                                android:textSize="@dimen/QIBus_softui_font_large" />
+
+                            <EditText
+                                android:id="@+id/edEmail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="@dimen/QIBus_softui_spacing_small"
+                                android:layout_marginEnd="@dimen/QIBus_softui_spacing_small"
+                                android:layout_weight="4"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/googlesansregular"
+                                android:hint="@string/QIBus_softui_hint_email"
+                                android:inputType="textEmailAddress"
+                                android:text="@string/QIBus_softui_text_user_email"
+                                android:textColor="@color/QIBus_softui_textChild"
+                                android:textSize="@dimen/QIBus_softui_font_large" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view5"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/QIBus_softui_viewheight"
+                            android:layout_marginStart="@dimen/QIBus_softui_spacing_medium"
+                            android:layout_marginTop="@dimen/QIBus_softui_spacing_medium"
+                            android:layout_marginEnd="@dimen/QIBus_softui_spacing_medium"
+                            android:layout_marginBottom="@dimen/QIBus_softui_spacing_medium"
+                            android:background="@color/QIBus_softui_view_color"
+                            android:paddingStart="@dimen/QIBus_softui_spacing_medium"
+                            android:paddingEnd="@dimen/QIBus_softui_spacing_medium" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/QIBus_softui_spacing_medium"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/QIBus_softui_spacing_small">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/QIBus_softui_spacing_large"
+                                android:layout_weight="1.5"
+                                android:fontFamily="@font/googlesansregular"
+                                android:text="@string/QIBus_softui_text_phone"
+                                android:textColor="@color/QIBus_softui_textChild"
+                                android:textSize="@dimen/QIBus_softui_font_large" />
+
+                            <EditText
+                                android:id="@+id/edContact"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/QIBus_softui_spacing_small"
+                                android:layout_marginEnd="@dimen/QIBus_softui_spacing_small"
+                                android:layout_weight="4"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/googlesansregular"
+                                android:hint="@string/QIBus_softui_hint_mobile"
+                                android:inputType="number"
+                                android:text="@string/QIBus_softui_text_user_phone"
+                                android:textColor="@color/QIBus_softui_textChild"
+                                android:textSize="@dimen/QIBus_softui_font_large" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card2"
+                    android:background="@drawable/qibus_softui_ic_card_new">
+
+                    <TextView
+                        android:id="@+id/btnSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/googlesansbold"
+                        android:gravity="center"
+                        android:text="@string/QIBus_softui_text_save"
+                        android:textAllCaps="false"
+                        android:textColor="@color/QIBus_softui_textColorPrimary"
+                        android:textSize="@dimen/QIBus_softui_font_large" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

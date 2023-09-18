@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/qibus_softui_ic_home_4_line"
+        android:title="" />
+    <item
+        android:id="@+id/explore"
+        android:icon="@drawable/qibus_softui_ic_briefcase"
+        android:title="" />
+    <item
+        android:id="@+id/tvBooking"
+        android:icon="@drawable/qibus_softui_ic_file"
+        android:title="" />
+    <item
+        android:id="@+id/ic_profile"
+        android:icon="@drawable/qibus_softui_ic_more_fill"
+        android:title="" />
+</menu>

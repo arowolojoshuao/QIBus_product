@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="app.iqonicthemes.qibus">
+
+    <application
+        android:allowBackup="true"
+        android:fitsSystemWindows="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustResize"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.PackageActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.OffersActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.CardDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.PaymentActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.PassengerDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.DroppingPointActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.VerificationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.BookingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.SignInActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.SelectionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.NotificationActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.BusListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.ProfileSettingsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.WalletActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.CardsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.ReferEarnActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="app.iqonicthemes.qibus.ui.activity.HelpActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

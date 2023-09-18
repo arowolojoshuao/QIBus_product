@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#eb4b51</color>
+    <color name="colorPrimaryDark">#eb4b51</color>
+    <color name="colorPrimaryRipple">#F57074</color>
+
+    <color name="colorAccent">#eb4b51</color>
+    <color name="blue">#4C92C0</color>
+    <color name="red">#e51415</color>
+    <color name="white">#fff</color>
+    <color name="gray">#E2E2E2</color>
+    <color name="rating">#FFC107</color>
+
+    <color name="startcolor">@color/colorPrimary</color>
+    <color name="endcolor">@color/colorPrimary </color>
+
+    <color name="view_color">#DADADA</color>
+    <color name="app_background">#F8F7F7</color>
+    <color name="color_check">#139B18</color>
+    <color name="colorlink_blue">#1887f9</color>
+
+    <color name="textheader">#464545</color>
+    <color name="textchild">#747474</color>
+    <color name="light_grey">#B8B8B8</color>
+    <color name="dark_gray">#929292</color>
+    <color name="icon_color">#747474</color>
+
+    <item name="purple" type="color">#B88DDD</item>
+    <item name="green" type="color">#C2DB77</item>
+    <item name="orange" type="color">#F5D270</item>
+    <item name="darkblue" type="color">#5FACC9</item>
+    <item name="darkpurple" type="color">#B285CC</item>
+    <item name="darkgreen" type="color">#B6DD6E</item>
+    <item name="pink" type="color">#f5bebe</item>
+
+    <integer-array name="androidcolors">
+        <item>@color/purple</item>
+        <item>@color/green</item>
+        <item>@color/orange</item>
+        <item>@color/darkblue</item>
+        <item>@color/darkpurple</item>
+        <item>@color/darkgreen</item>
+    </integer-array>
+
+</resources>

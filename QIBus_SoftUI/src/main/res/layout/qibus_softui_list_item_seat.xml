@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/QIBus_softui_spacing_xsmall">
+
+    <ImageView
+        android:id="@+id/ivSeat"
+        android:layout_width="@dimen/QIBus_softui_imageWidth_35"
+        android:layout_height="@dimen/QIBus_softui_imageheight_35"
+        android:layout_margin="@dimen/QIBus_softui_spacing_xsmall"
+        android:contentDescription="@string/QIBus_softui_txt_todo"
+        android:src="@drawable/qibus_softui_ic_newseater" />
+
+    <ImageView
+        android:id="@+id/ivSeatSelected"
+        android:layout_width="@dimen/QIBus_softui_imageWidth_35"
+        android:layout_height="@dimen/QIBus_softui_imageheight_35"
+        android:layout_margin="@dimen/QIBus_softui_spacing_xsmall"
+        android:contentDescription="@string/QIBus_softui_txt_todo"
+        android:src="@drawable/qibus_softui_ic_newseater"
+        android:tint="@color/QIBus_softui_colorPrimary"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivSeatLadies"
+        android:layout_width="@dimen/QIBus_softui_imageWidth_35"
+        android:layout_height="@dimen/QIBus_softui_imageheight_35"
+        android:layout_margin="@dimen/QIBus_softui_spacing_xsmall"
+        android:contentDescription="@string/QIBus_softui_txt_todo"
+        android:src="@drawable/qibus_softui_ic_newseater"
+        android:tint="@color/QIBus_softui_pink"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/ivSeatBooked"
+        android:layout_width="@dimen/QIBus_softui_imageWidth_35"
+        android:layout_height="@dimen/QIBus_softui_imageheight_35"
+        android:layout_margin="@dimen/QIBus_softui_spacing_xsmall"
+        android:contentDescription="@string/QIBus_softui_txt_todo"
+        android:src="@drawable/qibus_softui_ic_newseater"
+        android:tint="@color/QIBus_softui_dark_gray"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvSeatNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivSeat"
+        android:layout_marginStart="@dimen/QIBus_softui_spacing_medium"
+        android:textSize="@dimen/QIBus_softui_font_medium"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

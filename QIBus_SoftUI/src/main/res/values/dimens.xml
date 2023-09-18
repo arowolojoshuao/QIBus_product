@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="QIBus_softui_imadesize_100dp">100dp</dimen>
+    <dimen name="QIBus_softui_margin_32dp">32dp</dimen>
+    <dimen name="QIBus_softui_textSize_12sp">12sp</dimen>
+    <dimen name="QIBus_softui_imageWidth_35">35dp</dimen>
+    <dimen name="QIBus_softui_imageheight_35">35dp</dimen>
+    <dimen name="QIBus_softui_ptop_5dp">5dp</dimen>
+    <dimen name="QIBus_softui_img_icon">@dimen/_20sdp</dimen>
+    <dimen name="QIBus_softui_profile_width_150dp">@dimen/_90sdp</dimen>
+    <dimen name="QIBus_softui_profile_height_150dp">@dimen/_90sdp</dimen>
+
+    <dimen name="design_bottom_navigation_active_text_size" tools:ignore="PrivateResource">12sp</dimen>
+    <dimen name="QIBus_softui_font_xlarge">26sp</dimen>
+    <dimen name="QIBus_softui_font_mlarge">20sp</dimen>
+    <dimen name="QIBus_softui_font_xxlarge">32sp</dimen>
+    <dimen name="QIBus_softui_font_xxxlarge">40sp</dimen>
+    <dimen name="QIBus_softui_font_large">16sp</dimen>
+    <dimen name="QIBus_softui_font_medium">14sp</dimen>
+    <dimen name="QIBus_softui_font_small">10sp</dimen>
+    <dimen name="QIBus_softui_font_normal">18sp</dimen>
+
+    <dimen name="QIBus_softui_card_shadow">1dp</dimen>
+    <dimen name="QIBus_softui_bottom_icon">@dimen/_35sdp</dimen>
+    <dimen name="QIBus_softui_spacing_xsmall">@dimen/_2sdp</dimen>
+    <dimen name="QIBus_softui_spacing_small">@dimen/_4sdp</dimen>
+    <dimen name="QIBus_softui_spacing_6dp">@dimen/_6sdp</dimen>
+    <dimen name="QIBus_softui_spacing_medium">@dimen/_8sdp</dimen>
+    <dimen name="QIBus_softui_spacing_large">@dimen/_12sdp</dimen>
+    <dimen name="QIBus_softui_spacing_xlarge">@dimen/_40sdp</dimen>
+    <dimen name="QIBus_softui_holds_height">@dimen/_50sdp</dimen>
+    <dimen name="QIBus_softui_img_height">@dimen/_60sdp</dimen>
+    <dimen name="QIBus_softui_spacing_mlarge" >@dimen/_30sdp</dimen>
+    <dimen name="QIBus_softui_small_label_width" >@dimen/_65sdp</dimen>
+    <dimen name="QIBus_softui_view_height">@dimen/_100sdp</dimen>
+    <dimen name="QIBus_softui_viewheight">0.5dp</dimen>
+    <dimen name="QIBus_softui_search_width">@dimen/_240sdp</dimen>
+    <dimen name="QIBus_softui_package_height">@dimen/_200sdp</dimen>
+    <dimen name="QIBus_softui_login_img__height">@dimen/_130sdp</dimen>
+    <dimen name="QIBus_softui_notification_size">@dimen/_14sdp</dimen>
+    <dimen name="QIBus_softui_img_size">@dimen/_150sdp</dimen>
+    <dimen name="QIBus_softui_map_width">@dimen/_100sdp</dimen>
+    <dimen name="QIBus_softui_map_height">@dimen/_70sdp</dimen>
+    <dimen name="QIBus_softui_spacing_xxsmall">@dimen/_1sdp</dimen>
+    <dimen name="QIBus_softui_spacing_155sdp">@dimen/_155sdp</dimen>
+    <dimen name="QIBus_softui_spacing_25sdp">@dimen/_25sdp</dimen>
+    <dimen name="QIBus_softui_spacing_270sdp">@dimen/_270sdp</dimen>
+    <dimen name="QIBus_softui_spacing_130sdp">@dimen/_130sdp</dimen>
+    <dimen name="QIBus_softui_bg_corner">24dp</dimen>
+    <dimen name="QIBus_softui_bg_20dp">20dp</dimen>
+    <dimen name="QIBus_softui_bg_1dp">1dp</dimen>
+    <dimen name="QIBus_softui_bg_decrease20dp">-20dp</dimen>
+    <dimen name="QIBus_softui_bg_decrease30dp">-30dp</dimen>
+    <dimen name="QIBus_softui_bg_decrease6dp">-6dp</dimen>
+    <dimen name="QIBus_softui_bg_decrease12dp">-12dp</dimen>
+    <dimen name="QIBus_softui_bg_decrease10dp">-10dp</dimen>
+    <dimen name="QIBus_softui_bg_4dp">4dp</dimen>
+
+</resources>

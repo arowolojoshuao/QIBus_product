@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/IQBUSSoftUIScreenBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/qibus_softui_ic_card_bottom">
+
+        <RelativeLayout
+            android:layout_width="@dimen/QIBus_softui_search_width"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/btnBook"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/qibus_softui_ic_draw_rec_bottom">
+
+                <TextView
+                    android:id="@+id/tvSpecial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/googlesansbold"
+                    android:gravity="center"
+                    android:text="@string/QIBus_softui_text_book_now"
+                    android:textColor="@color/QIBus_softui_white"
+                    android:textSize="@dimen/QIBus_softui_font_normal"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/llOffer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/QIBus_softui_spacing_medium"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivBus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/QIBus_softui_spacing_medium"
+                            android:contentDescription="@string/QIBus_softui_txt_todo"
+                            android:src="@drawable/qibus_softui_ic_bus"
+                            android:tint="@color/QIBus_softui_colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/tvDestination"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/QIBus_softui_spacing_medium"
+                            android:layout_marginEnd="@dimen/QIBus_softui_spacing_medium"
+                            android:fontFamily="@font/googlesansbold"
+                            android:gravity="center_vertical"
+                            android:lines="2"
+                            android:maxLines="2"
+                            android:singleLine="false"
+                            android:textColor="@color/QIBus_softui_textHeader"
+                            android:textSize="@dimen/QIBus_softui_font_large"
+                            tools:text="Ahmedabad(Guj)- High Hill,Manali Surat to Ahmedabad" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/llOffer"
+                        android:layout_marginStart="@dimen/QIBus_softui_spacing_medium"
+                        android:layout_marginTop="@dimen/QIBus_softui_spacing_medium"
+                        android:layout_marginBottom="@dimen/QIBus_softui_spacing_large"
+                        android:drawablePadding="@dimen/QIBus_softui_spacing_medium"
+                        android:fontFamily="@font/googlesansregular"
+                        android:textColor="@color/QIBus_softui_textChild"
+                        android:textSize="@dimen/QIBus_softui_font_medium"
+                        tools:text="@string/QIBus_softui_lbl_booking_date1" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

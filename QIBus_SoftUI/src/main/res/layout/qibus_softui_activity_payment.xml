@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMain"
+    style="@style/IQBUSSoftUIScreenBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUISoftUIPaymentActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qibus_softui_bg_toolbar"
+        android:theme="@style/Toolbar"
+        app:contentInsetStart="0dp"
+        app:titleTextColor="@color/QIBus_softui_white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/QIBus_softui_txt_todo"
+                android:padding="@dimen/QIBus_softui_spacing_medium"
+                android:src="@drawable/qibus_softui_ic_left_arrow_white" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/QIBus_softui_spacing_medium"
+                android:layout_toStartOf="@id/ivAdd"
+                android:layout_toEndOf="@+id/ivBack"
+                android:fontFamily="@font/googlesansextrabold"
+                android:text="@string/QIBus_softui_lbl_payment"
+                android:textColor="@color/QIBus_softui_white"
+                android:textSize="@dimen/QIBus_softui_font_mlarge" />
+
+            <ImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/QIBus_softui_txt_todo"
+                android:padding="@dimen/QIBus_softui_spacing_medium"
+                android:src="@drawable/qibus_softui_ic_add_circle_line"
+                android:tint="@color/QIBus_softui_white" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        style="@style/IQBUSSoftUIScreenBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/QIBus_softui_spacing_medium"
+                    android:overScrollMode="never"
+                    android:visibility="visible" />
+
+
+                <RelativeLayout
+                    android:id="@+id/tvProfileSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/qibus_softui_ic_card_new">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/QIBus_softui_spacing_medium"
+                        android:layout_marginEnd="@dimen/QIBus_softui_spacing_medium"
+                        android:drawableStart="@drawable/qibus_softui_ic_earth_line"
+                        android:drawableEnd="@drawable/qibus_softui_ic_keyboard_arrow_grey"
+                        android:drawablePadding="@dimen/QIBus_softui_spacing_medium"
+                        android:fontFamily="@font/googlesansbold"
+                        android:gravity="start"
+                        android:paddingTop="@dimen/QIBus_softui_spacing_large"
+                        android:paddingBottom="@dimen/QIBus_softui_spacing_large"
+                        android:text="@string/QIBus_softui_text_net_banking"
+                        android:textColor="@color/QIBus_softui_textHeader"
+                        android:textSize="@dimen/QIBus_softui_font_large" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlCreditCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    android:background="@drawable/qibus_softui_ic_card_new">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/QIBus_softui_spacing_medium"
+                        android:layout_marginEnd="@dimen/QIBus_softui_spacing_medium"
+                        android:drawableStart="@drawable/qibus_softui_ic_bank_card_line"
+                        android:drawableEnd="@drawable/qibus_softui_ic_keyboard_arrow_grey"
+                        android:drawablePadding="@dimen/QIBus_softui_spacing_medium"
+                        android:fontFamily="@font/googlesansbold"
+                        android:gravity="start"
+                        android:paddingTop="@dimen/QIBus_softui_spacing_large"
+                        android:paddingBottom="@dimen/QIBus_softui_spacing_large"
+                        android:text="@string/QIBus_softui_text_credit_card"
+                        android:textColor="@color/QIBus_softui_textHeader"
+                        android:textSize="@dimen/QIBus_softui_font_large" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlDebitCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    android:background="@drawable/qibus_softui_ic_card_new">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/QIBus_softui_spacing_medium"
+                        android:layout_marginEnd="@dimen/QIBus_softui_spacing_medium"
+                        android:drawableStart="@drawable/qibus_softui_ic_bank_card_line"
+                        android:drawableEnd="@drawable/qibus_softui_ic_keyboard_arrow_grey"
+                        android:drawablePadding="@dimen/QIBus_softui_spacing_medium"
+                        android:fontFamily="@font/googlesansbold"
+                        android:gravity="start"
+                        android:paddingTop="@dimen/QIBus_softui_spacing_large"
+                        android:paddingBottom="@dimen/QIBus_softui_spacing_large"
+                        android:text="@string/QIBus_softui_text_debit"
+                        android:textColor="@color/QIBus_softui_textHeader"
+                        android:textSize="@dimen/QIBus_softui_font_large" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-15dp"
+                    android:background="@drawable/qibus_softui_ic_card_new">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/QIBus_softui_spacing_medium"
+                        android:layout_marginEnd="@dimen/QIBus_softui_spacing_medium"
+                        android:drawableStart="@drawable/qibus_softui_ic_wallet_3_line"
+                        android:drawableEnd="@drawable/qibus_softui_ic_keyboard_arrow_grey"
+                        android:drawablePadding="@dimen/QIBus_softui_spacing_medium"
+                        android:fontFamily="@font/googlesansbold"
+                        android:gravity="start"
+                        android:paddingTop="@dimen/QIBus_softui_spacing_large"
+                        android:paddingBottom="@dimen/QIBus_softui_spacing_large"
+                        android:text="@string/QIBus_softui_text_Mobilewallet"
+                        android:textColor="@color/QIBus_softui_textHeader"
+                        android:textSize="@dimen/QIBus_softui_font_large" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

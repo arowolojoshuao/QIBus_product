@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/IQBUSSoftUIScreenBackground"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_alignParentBottom="true"
+    android:baselineAligned="false"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/qibus_softui_ic_card_new">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:id="@+id/llHome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rvHomeView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/qibus_softui_round">
+
+                    <ImageView
+                        android:id="@+id/ivHome"
+                        android:layout_width="@dimen/QIBus_softui_bottom_icon"
+                        android:layout_height="@dimen/QIBus_softui_bottom_icon"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/QIBus_softui_txt_todo"
+                        android:padding="@dimen/_5sdp"
+                        app:srcCompat="@drawable/iqbus_softui_ic_home" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPackage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rvPkgView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:id="@+id/ivPackages"
+                        android:layout_width="@dimen/QIBus_softui_bottom_icon"
+                        android:layout_height="@dimen/QIBus_softui_bottom_icon"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/QIBus_softui_txt_todo"
+                        android:padding="@dimen/_5sdp"
+                        app:srcCompat="@drawable/qibus_softui_ic_local_mall_lite" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBooking"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rvBookingView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:id="@+id/ivBooking"
+                        android:layout_width="@dimen/QIBus_softui_bottom_icon"
+                        android:layout_height="@dimen/QIBus_softui_bottom_icon"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/QIBus_softui_txt_todo"
+                        android:padding="@dimen/_5sdp"
+                        app:srcCompat="@drawable/qibus_softui_ic_assignment_lite" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMore"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rvMoreView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:id="@+id/ivMore"
+                        android:layout_width="@dimen/QIBus_softui_bottom_icon"
+                        android:layout_height="@dimen/QIBus_softui_bottom_icon"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/QIBus_softui_txt_todo"
+                        android:padding="@dimen/_5sdp"
+                        app:srcCompat="@drawable/qibus_softui_ic_more_lite" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

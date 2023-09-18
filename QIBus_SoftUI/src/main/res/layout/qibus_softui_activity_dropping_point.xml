@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/IQBUSSoftUIScreenBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/QIBus_softui_view_height"
+        android:background="@drawable/qibus_softui_bg_toolbar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Toolbar"
+        android:visibility="visible"
+        app:contentInsetStart="0dp"
+        app:titleTextColor="@color/QIBus_softui_white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/QIBus_softui_txt_todo"
+                android:padding="@dimen/QIBus_softui_spacing_medium"
+                android:src="@drawable/qibus_softui_ic_left_arrow_white" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/QIBus_softui_spacing_medium"
+                android:layout_toEndOf="@+id/ivBack"
+                android:fontFamily="@font/googlesansextrabold"
+                android:singleLine="true"
+                android:text="@string/QIBus_softui_title_dropping"
+                android:textColor="@color/QIBus_softui_white"
+                android:textSize="@dimen/QIBus_softui_font_mlarge" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        style="@style/IQBUSSoftUIScreenBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/llOffer"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/QIBus_softui_spacing_medium"
+            android:background="@drawable/qibus_softui_ic_card_new"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPickup"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/qibus_softui_bg_leftswitch_select"
+                android:fontFamily="@font/googlesansbold"
+                android:gravity="center"
+                android:paddingTop="@dimen/QIBus_softui_spacing_medium"
+                android:paddingBottom="@dimen/QIBus_softui_spacing_medium"
+                android:text="@string/QIBus_softui_text_pickup_point"
+                android:textColor="@color/QIBus_softui_white"
+                android:textSize="@dimen/QIBus_softui_font_large" />
+
+            <TextView
+                android:id="@+id/tvDropping"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/qibus_softui_bg_rightswitch"
+                android:fontFamily="@font/googlesansbold"
+                android:gravity="center"
+                android:paddingTop="@dimen/QIBus_softui_spacing_medium"
+                android:paddingBottom="@dimen/QIBus_softui_spacing_medium"
+                android:text="@string/QIBus_softui_text_dropping_points"
+                android:textColor="@color/QIBus_softui_textHeader"
+                android:textSize="@dimen/QIBus_softui_font_large" />
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPickup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llOffer"
+            android:layout_marginBottom="@dimen/QIBus_softui_spacing_medium"
+            android:clipToPadding="true"
+            android:overScrollMode="never" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDropping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llOffer"
+            android:layout_marginBottom="@dimen/QIBus_softui_spacing_medium"
+            android:clipToPadding="true"
+            android:overScrollMode="never"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

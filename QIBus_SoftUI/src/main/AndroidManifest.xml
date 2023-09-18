@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iqonicthemes.qibus_softui">
+
+    <application
+        android:allowBackup="true"
+        android:fitsSystemWindows="true"
+        android:supportsRtl="true"
+        android:windowSoftInputMode="adjustResize">
+
+        <activity
+            android:name="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUISoftUISettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QIBusSoftui" />
+
+        <activity
+            android:name="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUISoftUIPackageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QIBusSoftui" />
+
+        <activity
+            android:name="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUISoftUIOffersActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QIBusSoftui" />
+
+        <activity
+            android:name="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUISoftUICardDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QIBusSoftui"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUISoftUIPaymentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QIBusSoftui" />
+
+        <activity
+            android:name="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUISoftUIPassengerDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QIBusSoftui"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUISoftUIDroppingPointActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QIBusSoftui" />
+
+        <activity
+            android:name="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUISoftUIVerificationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QIBusSoftui"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUISoftUIBookingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QIBusSoftui" />
+
+        <activity
+            android:name="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUISoftUISignInActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QIBusSoftui"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUISoftUIDashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QIBusSoftui"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUISoftUISplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QIBusSoftui" />
+
+        <activity
+            android:name="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUISoftUINotificationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QIBusSoftui" />
+
+        <activity
+            android:name="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUIBusSoftUIListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QIBusSoftui" />
+
+        <activity
+            android:name="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUISoftUIProfileSettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QIBusSoftui"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUISoftUIWalletActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QIBusSoftui" />
+
+        <activity
+            android:name="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUISoftUICardsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QIBusSoftui" />
+
+        <activity
+            android:name="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUISoftUIReferEarnActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QIBusSoftui" />
+
+        <activity
+            android:name="com.iqonicthemes.qibus_softui.ui.activity.QIBusSoftUISoftUIHelpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/QIBusSoftui" />
+
+    </application>
+
+</manifest>

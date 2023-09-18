@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivNotification"
+        android:layout_width="@dimen/QIBus_softui_spacing_mlarge"
+        android:layout_height="@dimen/QIBus_softui_spacing_mlarge"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/QIBus_softui_spacing_medium"
+        android:layout_marginEnd="@dimen/QIBus_softui_spacing_medium"
+        android:layout_marginBottom="@dimen/QIBus_softui_spacing_medium"
+        android:contentDescription="@string/QIBus_softui_txt_todo"
+        android:padding="@dimen/QIBus_softui_spacing_small"
+        android:src="@drawable/qibus_softui_ic_notification_4_line" />
+
+    <TextView
+        android:id="@+id/tvNotificationCount"
+        android:layout_width="@dimen/QIBus_softui_notification_size"
+        android:layout_height="@dimen/QIBus_softui_notification_size"
+        android:layout_alignTop="@id/ivNotification"
+        android:layout_alignEnd="@id/ivNotification"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/QIBus_softui_spacing_medium"
+        android:background="@drawable/qibus_softui_bg_shape_notification"
+        android:gravity="center"
+        android:text="@string/QIBus_softui_text__2"
+        android:textColor="@color/QIBus_softui_white"
+        android:textSize="@dimen/QIBus_softui_font_small"
+        android:visibility="visible" />
+</RelativeLayout>

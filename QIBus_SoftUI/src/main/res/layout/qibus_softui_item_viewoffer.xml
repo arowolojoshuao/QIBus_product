@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/IQBUSSoftUIScreenBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qibus_softui_ic_card_bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/rlOfferBackground"
+                style="@style/IQBUSSoftUIScreenBackground"
+                android:layout_width="@dimen/QIBus_softui_spacing_270sdp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/ivImageSrc"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:scaleType="centerCrop" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <LinearLayout
+                android:id="@+id/llOffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlOfferBackground"
+                android:background="@drawable/qibus_softui_ic_draw_rec_bottom"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/QIBus_softui_spacing_small"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/googlesansbold"
+                    android:gravity="end"
+                    android:paddingTop="@dimen/QIBus_softui_spacing_large"
+                    android:paddingBottom="@dimen/QIBus_softui_spacing_large"
+                    android:text="@string/QIBus_softui_lbl_use_code"
+                    android:textAllCaps="true"
+                    android:textColor="@color/QIBus_softui_white"
+                    android:textSize="@dimen/QIBus_softui_font_medium" />
+
+                <TextView
+                    android:id="@+id/tvSpecial"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/googlesansbold"
+                    android:paddingStart="@dimen/QIBus_softui_spacing_small"
+                    android:paddingTop="@dimen/QIBus_softui_spacing_large"
+                    android:paddingEnd="@dimen/QIBus_softui_spacing_small"
+                    android:paddingBottom="@dimen/QIBus_softui_spacing_large"
+                    android:text="@string/QIBus_softui_lbl_special"
+                    android:textAllCaps="true"
+                    android:textColor="@color/QIBus_softui_white"
+                    android:textSize="@dimen/QIBus_softui_font_medium" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

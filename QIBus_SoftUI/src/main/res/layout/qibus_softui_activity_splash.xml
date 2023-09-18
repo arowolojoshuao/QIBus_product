@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/IQBUSSoftUIScreenBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="always"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="@dimen/QIBus_softui_imadesize_100dp"
+            android:layout_height="@dimen/QIBus_softui_imadesize_100dp"
+            android:contentDescription="@string/QIBus_softui_contentDescription"
+            android:src="@drawable/qibus_softui_login_bus" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

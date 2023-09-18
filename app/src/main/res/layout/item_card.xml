@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        app:cardCornerRadius="@dimen/spacing_small"
+        app:cardElevation="@dimen/card_shadow">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivCardbg"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/spacing_155sdp"
+                android:contentDescription="@string/txt_todo"
+                android:background="@color/view_color"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_card" />
+
+            <TextView
+                android:id="@+id/tvType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:fontFamily="@font/googlesansbold"
+                android:padding="@dimen/spacing_small"
+                android:text="@string/txt_visa"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_mlarge"
+                tools:ignore="RelativeOverlap" />
+
+            <LinearLayout
+                android:id="@+id/llCardno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvType"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:layout_marginTop="@dimen/spacing_xlarge"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/edDigit1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/googlesansbold"
+                    android:maxLength="4"
+                    android:padding="@dimen/spacing_small"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_mlarge"
+                    tools:text="@string/lbl_card_digit1" />
+
+                <TextView
+                    android:id="@+id/edDigit2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:fontFamily="@font/googlesansbold"
+                    android:maxLength="4"
+                    android:padding="@dimen/spacing_small"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_mlarge"
+                    tools:text="@string/lbl_card_digit2" />
+
+                <TextView
+                    android:id="@+id/edDigit3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:fontFamily="@font/googlesansbold"
+                    android:maxLength="4"
+                    android:padding="@dimen/spacing_small"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_mlarge"
+                    tools:text="@string/lbl_card_digit3" />
+
+                <TextView
+                    android:id="@+id/edDigit4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:fontFamily="@font/googlesansbold"
+                    android:maxLength="4"
+                    android:padding="@dimen/spacing_small"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_mlarge"
+                    tools:text="@string/lbl_card_digit2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvValid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llCardno"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:fontFamily="@font/googlesansregular"
+                android:paddingStart="@dimen/spacing_6dp"
+                android:paddingEnd="@dimen/spacing_small"
+                android:layout_marginBottom="@dimen/spacing_large"
+                android:text="@string/text_valid"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_medium" />
+
+            <TextView
+                android:id="@+id/tvValidDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llCardno"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:layout_toEndOf="@id/tvValid"
+                android:fontFamily="@font/googlesansbold"
+                android:layout_marginBottom="@dimen/spacing_large"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_medium"
+                tools:text="@string/txt_date" />
+
+            <TextView
+                android:id="@+id/tvHolderName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llCardno"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:layout_marginEnd="@dimen/spacing_large"
+                android:layout_toEndOf="@id/tvValidDate"
+                android:fontFamily="@font/googlesansbold"
+                android:gravity="end"
+                android:layout_marginBottom="@dimen/spacing_large"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_large"
+                tools:text="@string/txt_user_name" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

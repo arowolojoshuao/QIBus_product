@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <stroke
+        android:width="1dp"
+        android:color="@color/QIBus_softui_endColor" />
+    <gradient
+        android:endColor="@color/QIBus_softui_colorPrimary"
+        android:startColor="@color/QIBus_softui_colorPrimary" />
+    <size
+        android:width="@dimen/QIBus_softui_bg_20dp"
+        android:height="@dimen/QIBus_softui_bg_20dp" />
+</shape>

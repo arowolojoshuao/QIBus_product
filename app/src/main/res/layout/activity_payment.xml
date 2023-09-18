@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="app.iqonicthemes.qibus.ui.activity.PaymentActivity">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:background="@drawable/bg_toolbar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_toolbar"
+        android:theme="@style/Toolbar"
+        app:contentInsetStart="0dp"
+        app:titleTextColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/txt_todo"
+                android:padding="@dimen/spacing_medium"
+                android:src="@drawable/ic_left_arrow_white" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_toStartOf="@id/ivAdd"
+                android:layout_toEndOf="@+id/ivBack"
+                android:fontFamily="@font/googlesansextrabold"
+                android:text="@string/lbl_payment"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_mlarge" />
+
+            <ImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/txt_todo"
+                android:padding="@dimen/spacing_medium"
+                android:src="@drawable/ic_add_circle_line"
+                android:tint="@color/white" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:background="@drawable/bg_card">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:visibility="visible" />
+
+
+                <RelativeLayout
+                    android:id="@+id/tvProfileSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:layout_marginEnd="@dimen/spacing_medium"
+                    android:background="@drawable/bg_square"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/spacing_medium"
+                        android:layout_marginEnd="@dimen/spacing_medium"
+                        android:drawableStart="@drawable/ic_earth_line"
+                        android:drawableEnd="@drawable/ic_keyboard_arrow_grey"
+                        android:drawablePadding="@dimen/spacing_medium"
+                        android:fontFamily="@font/googlesansbold"
+                        android:gravity="start"
+                        android:paddingTop="@dimen/spacing_large"
+                        android:paddingBottom="@dimen/spacing_large"
+                        android:text="@string/text_net_banking"
+                        android:textColor="@color/textheader"
+                        android:textSize="@dimen/font_large" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlCreditCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:layout_marginEnd="@dimen/spacing_medium"
+                    android:background="@drawable/bg_square"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/spacing_medium"
+                        android:layout_marginEnd="@dimen/spacing_medium"
+                        android:drawableStart="@drawable/ic_bank_card_line"
+                        android:drawableEnd="@drawable/ic_keyboard_arrow_grey"
+                        android:drawablePadding="@dimen/spacing_medium"
+                        android:fontFamily="@font/googlesansbold"
+                        android:gravity="start"
+                        android:paddingTop="@dimen/spacing_large"
+                        android:paddingBottom="@dimen/spacing_large"
+                        android:text="@string/text_credit_card"
+                        android:textColor="@color/textheader"
+                        android:textSize="@dimen/font_large" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlDebitCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:layout_marginEnd="@dimen/spacing_medium"
+                    android:background="@drawable/bg_square"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/spacing_medium"
+                        android:layout_marginEnd="@dimen/spacing_medium"
+                        android:drawableStart="@drawable/ic_bank_card_line"
+                        android:drawableEnd="@drawable/ic_keyboard_arrow_grey"
+                        android:drawablePadding="@dimen/spacing_medium"
+                        android:fontFamily="@font/googlesansbold"
+                        android:gravity="start"
+                        android:paddingTop="@dimen/spacing_large"
+                        android:paddingBottom="@dimen/spacing_large"
+                        android:text="@string/text_debit"
+                        android:textColor="@color/textheader"
+                        android:textSize="@dimen/font_large" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_medium"
+                    android:background="@drawable/bg_square"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/spacing_medium"
+                        android:layout_marginEnd="@dimen/spacing_medium"
+                        android:drawableStart="@drawable/ic_wallet_3_line"
+                        android:drawableEnd="@drawable/ic_keyboard_arrow_grey"
+                        android:drawablePadding="@dimen/spacing_medium"
+                        android:fontFamily="@font/googlesansbold"
+                        android:gravity="start"
+                        android:paddingTop="@dimen/spacing_large"
+                        android:paddingBottom="@dimen/spacing_large"
+                        android:text="@string/text_Mobilewallet"
+                        android:textColor="@color/textheader"
+                        android:textSize="@dimen/font_large" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

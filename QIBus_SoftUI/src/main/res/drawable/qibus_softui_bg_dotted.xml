@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="90"
+    android:toDegrees="90">
+    <shape
+
+        android:shape="line">
+
+        <stroke
+            android:width="@dimen/QIBus_softui_bg_1dp"
+            android:color="@color/QIBus_softui_colorPrimary"
+            android:dashWidth="@dimen/QIBus_softui_bg_4dp"
+            android:dashGap="@dimen/QIBus_softui_bg_4dp" />
+    </shape>
+</rotate>

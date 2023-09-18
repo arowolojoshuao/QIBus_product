@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginLeft="-30dp"
+    android:layout_marginTop="-30dp"
+    android:layout_marginRight="-30dp"
+    android:background="@drawable/qibus_softui_ic_card_new">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:src="@drawable/qibus_softui_ic_arrow_back" />
+
+    <TextView
+        android:id="@+id/qibusTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_toRightOf="@+id/imgBack"
+        android:text="Home"
+        android:textColor="@color/QIBus_softui_colorPrimary"
+        android:textSize="@dimen/QIBus_softui_font_large"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

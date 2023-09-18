@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/IQBUSSoftUIScreenBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qibus_softui_bg_toolbar"
+        android:theme="@style/Toolbar"
+        android:visibility="visible"
+        app:contentInsetStart="0dp"
+        app:titleTextColor="@color/QIBus_softui_white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/QIBus_softui_txt_todo"
+                android:padding="@dimen/QIBus_softui_spacing_medium"
+                android:src="@drawable/qibus_softui_ic_left_arrow_white" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/QIBus_softui_spacing_medium"
+                android:layout_toEndOf="@+id/ivBack"
+                android:fontFamily="@font/googlesansextrabold"
+                android:text="@string/QIBus_softui_text_select_bus"
+                android:textColor="@color/QIBus_softui_white"
+                android:textSize="@dimen/QIBus_softui_font_mlarge" />
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        style="@style/IQBUSSoftUIScreenBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/QIBus_softui_spacing_large">
+
+        <LinearLayout
+            android:id="@+id/lvDack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/QIBus_softui_spacing_medium"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvUpper"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/qibus_softui_bg_leftswitch_select"
+                android:fontFamily="@font/googlesansbold"
+                android:gravity="center"
+                android:paddingTop="@dimen/QIBus_softui_spacing_medium"
+                android:paddingBottom="@dimen/QIBus_softui_spacing_medium"
+                android:text="@string/QIBus_softui_text_upper"
+                android:textColor="@color/QIBus_softui_white"
+                android:textSize="@dimen/QIBus_softui_font_large" />
+
+            <TextView
+                android:id="@+id/tvLower"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/qibus_softui_bg_rightswitch"
+                android:fontFamily="@font/googlesansbold"
+                android:gravity="center"
+                android:paddingTop="@dimen/QIBus_softui_spacing_medium"
+                android:paddingBottom="@dimen/QIBus_softui_spacing_medium"
+                android:text="@string/QIBus_softui_text_lower"
+                android:textColor="@color/QIBus_softui_textHeader"
+                android:textSize="@dimen/QIBus_softui_font_large" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lvDack"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/QIBus_softui_spacing_medium"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/QIBus_softui_spacing_medium">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/ivAvailable"
+                    android:layout_width="@dimen/QIBus_softui_img_icon"
+                    android:layout_height="@dimen/QIBus_softui_img_icon"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/QIBus_softui_txt_todo"
+                    android:src="@drawable/qibus_softui_ic_newseater" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/QIBus_softui_spacing_small"
+                    android:fontFamily="@font/googlesansregular"
+                    android:text="@string/QIBus_softui_text_available"
+                    android:textColor="@color/QIBus_softui_textChild"
+                    android:textSize="@dimen/QIBus_softui_font_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/QIBus_softui_spacing_large"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icBook"
+                    android:layout_width="@dimen/QIBus_softui_img_icon"
+                    android:layout_height="@dimen/QIBus_softui_img_icon"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/QIBus_softui_txt_todo"
+                    android:src="@drawable/qibus_softui_ic_newseater"
+                    android:tint="@color/QIBus_softui_dark_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/googlesansregular"
+                    android:text="@string/QIBus_softui_text_booked"
+                    android:textColor="@color/QIBus_softui_textHeader"
+                    android:textSize="@dimen/QIBus_softui_font_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/QIBus_softui_spacing_large"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icSelect"
+                    android:layout_width="@dimen/QIBus_softui_img_icon"
+                    android:layout_height="@dimen/QIBus_softui_img_icon"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/QIBus_softui_txt_todo"
+                    android:src="@drawable/qibus_softui_ic_newseater"
+                    android:tint="@color/QIBus_softui_colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/googlesansregular"
+                    android:text="@string/QIBus_softui_text_selected"
+                    android:textColor="@color/QIBus_softui_colorPrimary"
+                    android:textSize="@dimen/QIBus_softui_font_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/QIBus_softui_spacing_large"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/icLadies"
+                    android:layout_width="@dimen/QIBus_softui_img_icon"
+                    android:layout_height="@dimen/QIBus_softui_img_icon"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/QIBus_softui_txt_todo"
+                    android:src="@drawable/qibus_softui_ic_newseater"
+                    android:tint="@color/QIBus_softui_pink" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/googlesansregular"
+                    android:text="@string/QIBus_softui_text_ladies"
+                    android:textColor="@color/QIBus_softui_pink"
+                    android:textSize="@dimen/QIBus_softui_font_medium" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearhold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llInfo"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/QIBus_softui_spacing_medium"
+            android:background="@drawable/qibus_softui_bg_hold"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/googlesansbold"
+                android:padding="@dimen/QIBus_softui_spacing_small"
+                android:text="@string/QIBus_softui_text_hold"
+                android:textColor="@color/QIBus_softui_colorPrimary" />
+
+            <LinearLayout
+                android:id="@+id/llDynamicContent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/QIBus_softui_spacing_medium">
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/QIBus_softui_spacing_6dp"
+                android:layout_marginTop="@dimen/QIBus_softui_bg_decrease6dp"
+                android:contentDescription="@string/QIBus_softui_txt_todo"
+                android:paddingBottom="@dimen/QIBus_softui_spacing_medium"
+                android:src="@drawable/qibus_softui_ic_map_pin_2_line"
+                android:tint="@color/QIBus_softui_colorPrimary" />
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/llOffer"
+            android:layout_below="@+id/llInfo"
+            android:layout_toEndOf="@id/linearhold"
+            android:overScrollMode="never">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
+
+                <ImageView
+                    android:id="@+id/ivStering"
+                    android:layout_width="@dimen/QIBus_softui_bottom_icon"
+                    android:layout_height="@dimen/QIBus_softui_bottom_icon"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/QIBus_softui_spacing_25sdp"
+                    android:contentDescription="@string/QIBus_softui_txt_todo"
+                    android:paddingTop="@dimen/QIBus_softui_spacing_medium"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/qibus_softui_ic_weel" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivStering"
+                    android:layout_marginStart="@dimen/QIBus_softui_spacing_large"
+                    android:layout_marginEnd="@dimen/QIBus_softui_spacing_large"
+                    android:clipToPadding="false"
+                    android:paddingTop="@dimen/QIBus_softui_spacing_medium"
+                    android:paddingBottom="@dimen/QIBus_softui_spacing_mlarge"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/llOffer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/qibus_softui_bg_bottom_shadow"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/QIBus_softui_spacing_medium"
+                android:layout_marginEnd="@dimen/QIBus_softui_spacing_medium">
+
+                <ImageView
+                    android:layout_width="@dimen/QIBus_softui_img_size"
+                    android:layout_height="@dimen/QIBus_softui_img_height"
+                    android:layout_centerInParent="true"
+                    android:alpha="0.1"
+                    android:contentDescription="@string/QIBus_softui_txt_todo"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/qibus_softui_ic_ticket" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/QIBus_softui_spacing_large"
+                    android:layout_marginTop="@dimen/QIBus_softui_spacing_medium"
+                    android:layout_marginEnd="@dimen/QIBus_softui_spacing_medium"
+                    android:layout_marginBottom="@dimen/QIBus_softui_spacing_small"
+                    android:fontFamily="@font/googlesansbold"
+                    android:text="@string/QIBus_softui_text_ticket_price"
+                    android:textColor="@color/QIBus_softui_textHeader"
+                    android:textSize="@dimen/QIBus_softui_font_large" />
+
+                <TextView
+                    android:id="@+id/txtTicketPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/QIBus_softui_spacing_medium"
+                    android:layout_marginTop="@dimen/QIBus_softui_spacing_medium"
+                    android:layout_marginEnd="@dimen/QIBus_softui_spacing_large"
+                    android:layout_marginBottom="@dimen/QIBus_softui_spacing_small"
+                    android:fontFamily="@font/googlesansbold"
+                    android:textColor="@color/QIBus_softui_textHeader"
+                    android:textSize="@dimen/QIBus_softui_font_large"
+                    tools:ignore="RelativeOverlap"
+                    tools:text="@string/QIBus_softui__500" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtTicketPrice"
+                    android:layout_marginStart="@dimen/QIBus_softui_spacing_large"
+                    android:layout_marginEnd="@dimen/QIBus_softui_spacing_medium"
+                    android:layout_marginBottom="@dimen/QIBus_softui_spacing_small"
+                    android:fontFamily="@font/googlesansbold"
+                    android:text="@string/QIBus_softui_text_tax"
+                    android:textColor="@color/QIBus_softui_textHeader"
+                    android:textSize="@dimen/QIBus_softui_font_large" />
+
+                <TextView
+                    android:id="@+id/txTax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtTicketPrice"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/QIBus_softui_spacing_medium"
+                    android:layout_marginEnd="@dimen/QIBus_softui_spacing_large"
+                    android:layout_marginBottom="@dimen/QIBus_softui_spacing_small"
+                    android:fontFamily="@font/googlesansbold"
+                    android:text="@string/QIBus_softui_text_5txt"
+                    android:textColor="@color/QIBus_softui_textHeader"
+                    android:textSize="@dimen/QIBus_softui_font_large" />
+
+                <TextView
+                    android:id="@+id/tvTotalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txTax"
+                    android:layout_marginStart="@dimen/QIBus_softui_spacing_large"
+                    android:layout_marginEnd="@dimen/QIBus_softui_spacing_medium"
+                    android:layout_marginBottom="@dimen/QIBus_softui_spacing_medium"
+                    android:fontFamily="@font/googlesansbold"
+                    android:text="@string/QIBus_softui_text_total_price"
+                    android:textColor="@color/QIBus_softui_colorPrimary"
+                    android:textSize="@dimen/QIBus_softui_font_large" />
+
+                <TextView
+                    android:id="@+id/tvTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txTax"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/QIBus_softui_spacing_medium"
+                    android:layout_marginEnd="@dimen/QIBus_softui_spacing_large"
+                    android:layout_marginBottom="@dimen/QIBus_softui_spacing_medium"
+                    android:fontFamily="@font/googlesansbold"
+                    android:textColor="@color/QIBus_softui_colorPrimary"
+                    android:textSize="@dimen/QIBus_softui_font_large"
+                    tools:text="@string/QIBus_softui__500" />
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btnBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/QIBus_softui_colorPrimary"
+                android:fontFamily="@font/googlesansbold"
+                android:text="@string/QIBus_softui_text_book_now"
+                android:textAllCaps="false"
+                android:textColor="@color/QIBus_softui_white"
+                android:textSize="@dimen/QIBus_softui_font_large" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

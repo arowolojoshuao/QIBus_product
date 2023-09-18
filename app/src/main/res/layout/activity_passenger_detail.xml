@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context="app.iqonicthemes.qibus.ui.activity.PassengerDetailActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:background="@drawable/bg_toolbar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_toolbar"
+        android:theme="@style/Toolbar"
+        android:visibility="visible"
+        app:contentInsetStart="0dp"
+        app:titleTextColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/spacing_medium"
+                android:src="@drawable/ic_left_arrow_white"
+                android:contentDescription="@string/txt_todo"/>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_toEndOf="@+id/ivBack"
+                android:fontFamily="@font/googlesansextrabold"
+                android:text="@string/title_passengerdetail"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_mlarge" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:background="@drawable/bg_card">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_medium"
+                    app:cardCornerRadius="@dimen/spacing_small"
+                    app:cardElevation="@dimen/card_shadow">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/spacing_small"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lblContact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/spacing_small"
+                            android:layout_marginTop="@dimen/spacing_medium"
+                            android:layout_marginEnd="@dimen/spacing_medium"
+                            android:fontFamily="@font/googlesansbold"
+                            android:paddingStart="@dimen/spacing_small"
+                            android:textColor="@color/textheader"
+                            android:paddingEnd="@dimen/spacing_small"
+                            android:text="@string/text_contact_information"
+                            android:textSize="@dimen/font_large" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/spacing_medium"
+                            android:layout_marginBottom="@dimen/spacing_xsmall"
+                            android:padding="@dimen/spacing_small">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing_large"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/googlesansregular"
+                                android:text="@string/lbl_email"
+                                android:textColor="@color/textchild"
+                                android:textSize="@dimen/font_large" />
+
+                            <EditText
+                                android:id="@+id/edEmail"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="@dimen/spacing_small"
+                                android:layout_marginEnd="@dimen/spacing_small"
+                                android:layout_weight="4"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/googlesansregular"
+                                android:hint="@string/hint_email"
+                                android:inputType="textEmailAddress"
+                                android:textColor="@color/textchild"
+                                android:textSize="@dimen/font_large" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/viewheight"
+                            android:layout_marginStart="@dimen/spacing_large"
+                            android:background="@color/light_grey"
+                            android:padding="@dimen/spacing_small" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_xsmall"
+                            android:layout_marginBottom="@dimen/spacing_medium"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/spacing_small">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing_large"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/googlesansregular"
+                                android:text="@string/text_phone"
+                                android:textColor="@color/textchild"
+                                android:textSize="@dimen/font_large" />
+
+                            <EditText
+                                android:id="@+id/edMobileNumber"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing_small"
+                                android:layout_marginEnd="@dimen/spacing_small"
+                                android:layout_weight="4"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/googlesansregular"
+                                android:hint="@string/hint_mobile"
+                                android:inputType="number"
+                                android:textColor="@color/textchild"
+                                android:textSize="@dimen/font_large" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:id="@+id/llDynamicContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <Button
+                    android:id="@+id/btnBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:layout_marginEnd="@dimen/spacing_medium"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:background="@drawable/bg_btn_shape"
+                    android:fontFamily="@font/googlesansbold"
+                    android:text="@string/text_done"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_large" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

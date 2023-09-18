@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:background="@drawable/bg_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:background="@drawable/bg_card">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/spacing_large">
+
+
+                <TextView
+                    android:id="@+id/tvProfileSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:layout_marginEnd="@dimen/spacing_medium"
+                    android:background="@drawable/bg_square"
+                    android:drawableStart="@drawable/ic_user_settings_line"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_grey"
+                    android:drawablePadding="@dimen/spacing_medium"
+                    android:fontFamily="@font/googlesansbold"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                    android:paddingStart="@dimen/spacing_medium"
+                    android:paddingTop="@dimen/spacing_large"
+                    android:paddingEnd="@dimen/spacing_medium"
+                    android:paddingBottom="@dimen/spacing_large"
+                    android:text="@string/lbl_profile_settings"
+                    android:textColor="@color/textheader"
+                    android:textSize="@dimen/font_large" />
+
+                <TextView
+                    android:id="@+id/tvWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:layout_marginEnd="@dimen/spacing_medium"
+                    android:background="@drawable/bg_square"
+                    android:drawableStart="@drawable/ic_wallet_3_line"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_grey"
+                    android:drawablePadding="@dimen/spacing_medium"
+                    android:fontFamily="@font/googlesansbold"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                    android:paddingStart="@dimen/spacing_medium"
+                    android:paddingTop="@dimen/spacing_large"
+                    android:paddingEnd="@dimen/spacing_medium"
+                    android:paddingBottom="@dimen/spacing_large"
+                    android:text="@string/lbl__wallet"
+                    android:textColor="@color/textheader"
+                    android:textSize="@dimen/font_large" />
+
+
+                <TextView
+                    android:id="@+id/tvCards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:layout_marginEnd="@dimen/spacing_medium"
+                    android:background="@drawable/bg_square"
+                    android:drawableStart="@drawable/ic_bank_card_line"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_grey"
+                    android:drawablePadding="@dimen/spacing_medium"
+                    android:fontFamily="@font/googlesansbold"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/spacing_medium"
+                    android:paddingTop="@dimen/spacing_large"
+                    android:paddingEnd="@dimen/spacing_medium"
+                    android:paddingBottom="@dimen/spacing_large"
+                    android:text="@string/lbl_cards"
+                    android:textColor="@color/textheader"
+                    android:textSize="@dimen/font_large" />
+
+
+                <TextView
+                    android:id="@+id/tvReferEarn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:layout_marginEnd="@dimen/spacing_medium"
+                    android:background="@drawable/bg_square"
+                    android:drawableStart="@drawable/ic_money_dollar_circle_line"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_grey"
+                    android:drawablePadding="@dimen/spacing_medium"
+                    android:fontFamily="@font/googlesansbold"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/spacing_medium"
+                    android:paddingTop="@dimen/spacing_large"
+                    android:paddingEnd="@dimen/spacing_medium"
+                    android:paddingBottom="@dimen/spacing_large"
+                    android:text="@string/refere_and_earn"
+                    android:textColor="@color/textheader"
+                    android:textSize="@dimen/font_large" />
+
+
+                <TextView
+                    android:id="@+id/tvHelp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:layout_marginEnd="@dimen/spacing_medium"
+                    android:background="@drawable/bg_square"
+                    android:drawableStart="@drawable/ic_question_line"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_grey"
+                    android:drawablePadding="@dimen/spacing_medium"
+                    android:fontFamily="@font/googlesansbold"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/spacing_medium"
+                    android:paddingTop="@dimen/spacing_large"
+                    android:paddingEnd="@dimen/spacing_medium"
+                    android:paddingBottom="@dimen/spacing_large"
+                    android:text="@string/lbl_help_support"
+                    android:textColor="@color/textheader"
+                    android:textSize="@dimen/font_large" />
+
+
+                <TextView
+                    android:id="@+id/tvSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:layout_marginEnd="@dimen/spacing_medium"
+                    android:background="@drawable/bg_square"
+                    android:drawableStart="@drawable/ic_settings"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_grey"
+                    android:drawablePadding="@dimen/spacing_medium"
+                    android:fontFamily="@font/googlesansbold"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/spacing_medium"
+                    android:paddingTop="@dimen/spacing_large"
+                    android:paddingEnd="@dimen/spacing_medium"
+                    android:paddingBottom="@dimen/spacing_large"
+                    android:text="@string/text_settings"
+                    android:textColor="@color/textheader"
+                    android:textSize="@dimen/font_large" />
+
+
+                <TextView
+                    android:id="@+id/tvLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:layout_marginEnd="@dimen/spacing_medium"
+                    android:background="@drawable/bg_square"
+                    android:drawableStart="@drawable/ic_logout_circle_line"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_grey"
+                    android:drawablePadding="@dimen/spacing_medium"
+                    android:fontFamily="@font/googlesansbold"
+                    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/spacing_medium"
+                    android:paddingTop="@dimen/spacing_large"
+                    android:paddingEnd="@dimen/spacing_medium"
+                    android:paddingBottom="@dimen/spacing_large"
+                    android:text="@string/text_logout"
+                    android:textColor="@color/textheader"
+                    android:textSize="@dimen/font_large" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/small_label_width"
+                        android:layout_height="@dimen/small_label_width"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/txt_todo"
+                        android:src="@drawable/ic_buslogo" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/googlesansbold"
+                        android:text="@string/text_version_1_0"
+                        android:textAlignment="center"
+                        android:textColor="@color/textchild"
+                        android:textSize="@dimen/font_medium" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

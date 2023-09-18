@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_xxsmall"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="@dimen/spacing_small"
+        app:cardElevation="@dimen/card_shadow">
+
+        <RelativeLayout
+            android:layout_width="@dimen/search_width"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card"
+                android:background="@null"
+                android:fontFamily="@font/googlesansbold"
+                android:text="@string/text_book_now"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_large" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card"
+                app:cardCornerRadius="@dimen/spacing_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp">
+
+                <RelativeLayout
+                    android:id="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/llOffer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/spacing_medium">
+
+                        <ImageView
+                            android:id="@+id/ivBus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/spacing_medium"
+                            android:contentDescription="@string/txt_todo"
+                            android:src="@drawable/ic_bus"
+                            android:tint="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/tvDestination"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="false"
+                            android:layout_marginStart="@dimen/spacing_medium"
+                            android:layout_marginEnd="@dimen/spacing_medium"
+                            android:lines="2"
+                            android:maxLines="2"
+                            android:fontFamily="@font/googlesansbold"
+                            android:gravity="center_vertical"
+                            tools:text="Ahmedabad(Guj)- High Hill,Manali Surat to Ahmedabad"
+                            android:textColor="@color/textheader"
+                            android:textSize="@dimen/font_large" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/llOffer"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:layout_marginStart="@dimen/spacing_medium"
+                        android:drawablePadding="@dimen/spacing_medium"
+                        android:layout_marginBottom="@dimen/spacing_large"
+                        android:fontFamily="@font/googlesansregular"
+                        android:textColor="@color/textchild"
+                        android:textSize="@dimen/font_medium"
+                        tools:text="@string/lbl_booking_date1"/>
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:focusableInTouchMode="true">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:background="@drawable/bg_toolbar" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/spacing_large"
+        app:cardBackgroundColor="@color/app_background"
+        app:cardCornerRadius="@dimen/spacing_medium">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rlLayer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/spacing_small"
+                    android:paddingTop="@dimen/spacing_medium"
+                    android:paddingEnd="@dimen/spacing_small">
+
+                    <TextView
+                        android:id="@+id/tvLblNewPackage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/googlesansbold"
+                        android:padding="@dimen/spacing_medium"
+                        android:text="@string/txt_new_package"
+                        android:textColor="@color/textheader"
+                        android:textSize="@dimen/font_large" />
+
+                    <TextView
+                        android:layout_toEndOf="@id/tvLblNewPackage"
+                        android:id="@+id/tvViewAllNewPackage"
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/googlesansbold"
+                        android:padding="@dimen/spacing_medium"
+                        android:text="@string/txt_view_all"
+                        android:textColor="@color/textchild" />
+
+                </RelativeLayout>
+
+                <app.iqonicthemes.qibus.utils.RecyclerCoverFlow
+                    android:id="@+id/rvNewPackage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/package_height"
+                    android:layout_below="@id/rlLayer1"
+                    android:layout_marginTop="@dimen/bg_decrease12dp"
+                    android:clipToPadding="false"
+                    android:overScrollMode="ifContentScrolls"
+                    android:paddingStart="@dimen/spacing_small"
+                    android:paddingEnd="@dimen/spacing_medium" />
+
+                <RelativeLayout
+                    android:id="@+id/rlLayer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rvNewPackage"
+                    android:layout_marginTop="@dimen/bg_decrease20dp"
+                    android:paddingStart="@dimen/spacing_small"
+                    android:paddingEnd="@dimen/spacing_small">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/googlesansbold"
+                        android:padding="@dimen/spacing_medium"
+                        android:text="@string/txt_popular_package"
+                        android:layout_toStartOf="@id/tvViewallPopularPackage"
+                        android:textColor="@color/textheader"
+                        android:textSize="@dimen/font_large" />
+
+                    <TextView
+                        android:id="@+id/tvViewallPopularPackage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/googlesansbold"
+                        android:padding="@dimen/spacing_medium"
+                        android:text="@string/txt_view_all"
+                        android:textColor="@color/textchild" />
+
+                </RelativeLayout>
+
+                <app.iqonicthemes.qibus.utils.RecyclerCoverFlow
+                    android:id="@+id/rvPopularPackage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/package_height"
+                    android:layout_below="@id/rlLayer2"
+                    android:layout_marginTop="@dimen/bg_decrease10dp"
+                    android:clipToPadding="false"
+                    android:overScrollMode="ifContentScrolls"
+                    android:paddingStart="@dimen/spacing_small"
+                    android:paddingEnd="@dimen/spacing_medium" />
+
+                <RelativeLayout
+                    android:id="@+id/rlLayer3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rvPopularPackage"
+                    android:layout_marginTop="@dimen/bg_decrease20dp"
+                    android:paddingStart="@dimen/spacing_small"
+                    android:paddingEnd="@dimen/spacing_small">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/googlesansbold"
+                        android:padding="@dimen/spacing_medium"
+                        android:text="@string/text_trending_packages"
+                        android:layout_toStartOf="@id/tvViewAllTrendingPackage"
+                        android:textColor="@color/textheader"
+                        android:textSize="@dimen/font_large" />
+
+                    <TextView
+                        android:id="@+id/tvViewAllTrendingPackage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/googlesansbold"
+                        android:padding="@dimen/spacing_medium"
+                        android:text="@string/txt_view_all"
+                        android:textColor="@color/textchild" />
+
+                </RelativeLayout>
+
+                <app.iqonicthemes.qibus.utils.RecyclerCoverFlow
+                    android:id="@+id/rvTrendingPackage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/package_height"
+                    android:layout_below="@+id/rlLayer3"
+                    android:layout_marginTop="@dimen/bg_decrease10dp"
+                    android:clipToPadding="false"
+                    android:overScrollMode="ifContentScrolls"
+                    android:paddingStart="@dimen/spacing_small"
+                    android:paddingEnd="@dimen/spacing_medium" />
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
+

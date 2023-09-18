@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/IQBUSSoftUIScreenBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qibus_softui_ic_card_new">
+
+        <RelativeLayout
+            android:id="@+id/card"
+            style="@style/IQBUSSoftUIScreenBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/QIBus_softui_spacing_medium">
+
+            <TextView
+                android:id="@+id/tvTravelName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/tvTime"
+                android:fontFamily="@font/googlesansbold"
+                android:textColor="@color/QIBus_softui_textHeader"
+                android:textSize="@dimen/QIBus_softui_font_large"
+                tools:text="@string/QIBus_softui_txt_high_hill_manali" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/googlesansbold"
+                android:gravity="end"
+                android:textColor="@color/QIBus_softui_textHeader"
+                android:textSize="@dimen/QIBus_softui_font_large"
+                tools:text="@string/QIBus_softui_txt_busTime" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTravelName"
+                android:layout_marginTop="@dimen/QIBus_softui_spacing_small"
+                android:fontFamily="@font/googlesansregular"
+                android:gravity="end"
+                android:textColor="@color/QIBus_softui_textChild"
+                tools:text="@string/QIBus_softui_txt_near_alim_chowk_manali" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

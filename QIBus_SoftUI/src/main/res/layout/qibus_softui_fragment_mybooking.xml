@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/IQBUSSoftUIScreenBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        style="@style/IQBUSSoftUIScreenBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llOffer"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/qibus_softui_ic_card_new"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvCompleted"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/qibus_softui_bg_leftswitch_select"
+                android:fontFamily="@font/googlesansbold"
+                android:gravity="center"
+                android:paddingTop="@dimen/QIBus_softui_spacing_medium"
+                android:paddingBottom="@dimen/QIBus_softui_spacing_medium"
+                android:text="@string/QIBus_softui_text_booked"
+                android:textColor="@color/QIBus_softui_white"
+                android:textSize="@dimen/QIBus_softui_font_large" />
+
+            <TextView
+                android:id="@+id/tvCancelled"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/qibus_softui_bg_rightswitch"
+                android:fontFamily="@font/googlesansbold"
+                android:gravity="center"
+                android:paddingTop="@dimen/QIBus_softui_spacing_medium"
+                android:paddingBottom="@dimen/QIBus_softui_spacing_medium"
+                android:text="@string/QIBus_softui_txtCancelled"
+                android:textColor="@color/QIBus_softui_textHeader"
+                android:textSize="@dimen/QIBus_softui_font_large" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/QIBus_softui_spacing_medium"
+            android:clipToPadding="false"
+            android:overScrollMode="never" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCancelled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/QIBus_softui_spacing_medium"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

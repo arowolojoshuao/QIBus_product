@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/googlesansregular</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_keyboard_backspace_black</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="FullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/googlesansregular</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_keyboard_backspace_black</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    /* Rating bar theme */
+    <style name="RatingBar" parent="Theme.MaterialComponents">
+        <item name="colorControlNormal">@color/rating</item>
+        <item name="colorControlActivated">@color/rating</item>
+    </style>
+
+    /* Toolbar theme */
+    <style name="Toolbar">
+        <item name="android:fontFamily">@font/googlesansextrabold</item>
+    </style>
+
+    /* Dialog animation */
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/anim_slide_up</item>
+        <item name="android:windowExitAnimation">@anim/anim_slide_bottom</item>
+    </style>
+
+    /* bottom navigation theme */
+    <style name="bottomnavigation" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimaryRipple</item>
+    </style>
+
+</resources>

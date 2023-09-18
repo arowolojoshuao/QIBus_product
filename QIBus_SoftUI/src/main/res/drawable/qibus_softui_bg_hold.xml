@@ -1,0 +1,12 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+    <gradient
+        android:startColor="@color/QIBus_softui_view_color"
+        android:endColor="@color/QIBus_softui_view_color"
+        />
+    <corners
+
+        android:bottomRightRadius="@dimen/QIBus_softui_spacing_large"
+        android:topRightRadius="@dimen/QIBus_softui_spacing_large"/>
+
+
+</shape>

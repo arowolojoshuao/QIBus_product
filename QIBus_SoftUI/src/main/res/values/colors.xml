@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="QIBus_softui_colorPrimary">#7373ea</color>
+    <color name="QIBus_softui_colorPrimaryDark">#7373ea</color>
+    <color name="QIBus_softui_colorPrimaryRipple">#7373ea</color>
+    <color name="QIBus_softui_colorAccent">#7373ea</color>
+
+
+    <color name="QIBus_softui_blue">#4C92C0</color>
+    <color name="QIBus_softui_red">#e51415</color>
+    <color name="QIBus_softui_white">#fff</color>
+    <color name="QIBus_softui_gray">#E2E2E2</color>
+    <color name="QIBus_softui_rating">#FFC107</color>
+
+    <color name="QIBus_softui_textColorPrimary">#212121</color>
+    <color name="QIBus_softui_textColorSecondary">#C4747474</color>
+
+    <color name="QIBus_softui_startColor">@color/QIBus_softui_app_background</color>
+    <color name="QIBus_softui_endColor">@color/QIBus_softui_app_background</color>
+
+    <color name="QIBus_softui_view_color">#DADADA</color>
+    <color name="QIBus_softui_app_background">#f2f4ff</color>
+    <color name="QIBus_softui_color_check">#139B18</color>
+    <color name="QIBus_softui_colorlink_blue">#1887f9</color>
+
+    <color name="QIBus_softui_textHeader">#464545</color>
+    <color name="QIBus_softui_textChild">#747474</color>
+    <color name="QIBus_softui_light_grey">#B8B8B8</color>
+    <color name="QIBus_softui_dark_gray">#929292</color>
+    <color name="QIBus_softui_icon_color">#747474</color>
+
+    <item name="QIBus_softui_purple" type="color">#B88DDD</item>
+    <item name="QIBus_softui_green" type="color">#C2DB77</item>
+    <item name="QIBus_softui_orange" type="color">#F5D270</item>
+    <item name="QIBus_softui_darkBlue" type="color">#5FACC9</item>
+    <item name="QIBus_softui_darkPurple" type="color">#B285CC</item>
+    <item name="QIBus_softui_darkGreen" type="color">#B6DD6E</item>
+    <item name="QIBus_softui_pink" type="color">#f5bebe</item>
+
+    <integer-array name="QIBus_softui_color">
+        <item>@color/QIBus_softui_purple</item>
+        <item>@color/QIBus_softui_green</item>
+        <item>@color/QIBus_softui_orange</item>
+        <item>@color/QIBus_softui_darkBlue</item>
+        <item>@color/QIBus_softui_darkPurple</item>
+        <item>@color/QIBus_softui_darkGreen</item>
+    </integer-array>
+
+</resources>

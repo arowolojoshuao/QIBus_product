@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMain"
+    style="@style/IQBUSSoftUIScreenBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qibus_softu_ic_card_new">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lldate"
+                android:layout_width="@dimen/QIBus_softui_img_height"
+                android:layout_height="@dimen/QIBus_softui_img_height"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/QIBus_softui_spacing_medium"
+                android:background="@drawable/qibus_softui_circle"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/googlesansbold"
+                    android:textColor="@color/QIBus_softui_colorPrimary"
+                    android:textSize="@dimen/QIBus_softui_font_large"
+                    tools:text="@string/QIBus_softui_text__2" />
+
+                <TextView
+                    android:id="@+id/tvMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/googlesansbold"
+                    android:textColor="@color/QIBus_softui_colorPrimary"
+                    android:textSize="@dimen/QIBus_softui_font_large"
+                    android:visibility="visible"
+                    tools:text="@string/QIBus_softui_lbl_may" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/QIBus_softui_spacing_medium"
+                android:layout_marginBottom="@dimen/QIBus_softui_spacing_medium"
+                android:layout_toEndOf="@+id/lldate"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDestination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/QIBus_softui_spacing_small"
+                    android:fontFamily="@font/googlesansbold"
+                    android:singleLine="true"
+                    android:text="@string/QIBus_softui_ahmedabad_guj_high_hill_manali"
+                    android:textColor="@color/QIBus_softui_textHeader"
+                    android:textSize="@dimen/QIBus_softui_font_large" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDestination"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/QIBus_softui_spacing_small"
+                    android:layout_marginEnd="@dimen/QIBus_softui_spacing_small"
+                    android:layout_marginBottom="@dimen/QIBus_softui_spacing_small"
+                    android:drawableStart="@drawable/qibus_softui_ic_bus_2_fill"
+                    android:drawablePadding="@dimen/QIBus_softui_spacing_small"
+                    android:fontFamily="@font/googlesansregular"
+                    android:gravity="center_vertical"
+                    android:text="@string/QIBus_softui_volvo_bus"
+                    android:textColor="@color/QIBus_softui_textChild"
+                    android:textSize="@dimen/QIBus_softui_font_medium" />
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDestination"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/QIBus_softui_spacing_small"
+                    android:layout_marginEnd="@dimen/QIBus_softui_spacing_medium"
+                    android:drawableEnd="@drawable/qibus_softui_ic_checkbox_circle_line"
+                    android:drawablePadding="@dimen/QIBus_softui_spacing_small"
+                    android:fontFamily="@font/googlesansregular"
+                    android:gravity="end"
+                    android:textColor="@color/QIBus_softui_color_check"
+                    android:textSize="@dimen/QIBus_softui_font_medium" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvSeatNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvPNR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvTicketNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/totalfare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/endtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/totaltime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</RelativeLayout>

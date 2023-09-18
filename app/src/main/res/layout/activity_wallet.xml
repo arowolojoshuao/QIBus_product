@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:background="@drawable/bg_toolbar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_toolbar"
+        android:theme="@style/Toolbar"
+        app:contentInsetStart="0dp"
+        app:titleTextColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/spacing_medium"
+                android:src="@drawable/ic_left_arrow_white"
+                android:contentDescription="@string/txt_todo"/>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/spacing_medium"
+                android:layout_toEndOf="@+id/ivBack"
+                android:fontFamily="@font/googlesansextrabold"
+                android:text="@string/title_wallet"
+                android:layout_toStartOf="@id/ivNotification"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_mlarge" />
+            <include
+                layout="@layout/layout_addnotification" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:padding="@dimen/spacing_medium"
+            android:background="@drawable/bg_card">
+
+            <ImageView
+                android:layout_width="@dimen/img_size"
+                android:layout_height="@dimen/img_size"
+                android:src="@drawable/ic_gr_wallet"
+                android:contentDescription="@string/txt_todo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/googlesansbold"
+                android:text="@string/lbl_your_wallet_in_balance"
+                android:textColor="@color/textheader"
+                android:textSize="@dimen/font_medium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_wallet_line"
+                android:drawablePadding="@dimen/spacing_medium"
+                android:fontFamily="@font/googlesansbold"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/spacing_medium"
+                android:paddingBottom="@dimen/spacing_medium"
+                android:text="@string/_200"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_xxlarge" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/googlesansbold"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/spacing_medium"
+                    android:paddingBottom="@dimen/spacing_medium"
+                    android:text="@string/lbl_wallet"
+                    android:textColor="@color/textheader"
+                    android:textSize="@dimen/font_large" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/viewheight"
+                    android:layout_below="@+id/lbl_wallet"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:layout_marginEnd="@dimen/spacing_medium"
+                    android:background="@color/view_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/spacing_medium"
+                    android:paddingBottom="@dimen/spacing_medium">
+
+                    <ImageView
+                        android:id="@+id/ivFaceBook"
+                        android:layout_width="@dimen/spacing_mlarge"
+                        android:layout_height="@dimen/spacing_mlarge"
+                        android:layout_margin="@dimen/spacing_medium"
+                        android:contentDescription="@string/txt_todo"
+                        android:src="@drawable/ic_facebook_fill" />
+
+                    <ImageView
+                        android:id="@+id/ivWhatsapp"
+                        android:layout_width="@dimen/spacing_mlarge"
+                        android:layout_height="@dimen/spacing_mlarge"
+                        android:layout_margin="@dimen/spacing_medium"
+                        android:contentDescription="@string/txt_todo"
+                        android:src="@drawable/ic_whatsapp_fill" />
+
+                    <ImageView
+                        android:id="@+id/ivGoogle"
+                        android:layout_width="@dimen/spacing_mlarge"
+                        android:layout_height="@dimen/spacing_mlarge"
+                        android:layout_margin="@dimen/spacing_medium"
+                        android:contentDescription="@string/txt_todo"
+                        android:src="@drawable/ic_google_fill"
+                        android:tint="@color/red" />
+
+                    <ImageView
+                        android:id="@+id/ivTwitter"
+                        android:layout_width="@dimen/spacing_mlarge"
+                        android:layout_height="@dimen/spacing_mlarge"
+                        android:layout_margin="@dimen/spacing_medium"
+                        android:contentDescription="@string/txt_todo"
+                        android:src="@drawable/ic_twitter" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+</RelativeLayout>

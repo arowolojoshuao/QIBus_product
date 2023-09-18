@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginStart="@dimen/QIBus_softui_spacing_medium"
+    android:layout_marginEnd="@dimen/QIBus_softui_spacing_medium"
+    android:layout_marginBottom="@dimen/QIBus_softui_spacing_large"
+    android:background="@drawable/qibus_softui_bg_common_shape"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvToastMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/QIBus_softui_spacing_large"
+        android:layout_marginLeft="@dimen/QIBus_softui_spacing_large"
+        android:layout_marginTop="@dimen/QIBus_softui_spacing_medium"
+        android:layout_marginEnd="@dimen/QIBus_softui_spacing_large"
+        android:layout_marginRight="@dimen/QIBus_softui_spacing_large"
+        android:layout_marginBottom="@dimen/QIBus_softui_spacing_medium"
+        android:fontFamily="@font/googlesansregular"
+        android:textAlignment="center"
+        android:textColor="@color/QIBus_softui_white"
+        android:textSize="@dimen/QIBus_softui_font_large"
+        tools:text="@string/app_name" />
+
+</LinearLayout>

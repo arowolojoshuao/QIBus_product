@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/IQBUSSoftUIScreenBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qibus_softui_ic_card_right">
+
+        <TextView
+            android:id="@+id/lbl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toLeftOf="@+id/rightViewSearch1"
+            android:maxLines="1"
+            android:text="Save 10%"
+            android:textColor="@color/QIBus_softui_colorPrimary"
+            android:textSize="@dimen/QIBus_softui_font_large" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl2"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_toLeftOf="@+id/rightViewSearch1"
+            android:drawablePadding="@dimen/_10sdp"
+            android:text="on your next booking"
+            android:textColor="@color/QIBus_softui_textColorSecondary"
+            android:textSize="@dimen/QIBus_softui_font_medium" />
+
+        <LinearLayout
+            android:id="@+id/rightViewSearch1"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/qibus_softui_ic_draw_rec_right"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="$20"
+                android:textColor="@color/QIBus_softui_white"
+                android:textSize="@dimen/QIBus_softui_font_large"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="off"
+                android:textColor="@color/QIBus_softui_white"
+                android:textSize="@dimen/QIBus_softui_font_large" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

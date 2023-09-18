@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="QIBusSoftui" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/QIBus_softui_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/QIBus_softui_colorPrimaryDark</item>
+        <item name="colorAccent">@color/QIBus_softui_colorAccent</item>
+        <item name="android:fontFamily">@font/googlesansregular</item>
+        <item name="android:homeAsUpIndicator">@drawable/qibus_softui_ic_keyboard_backspace_black
+        </item>
+        <item name="colorControlActivated">@color/QIBus_softui_colorPrimary</item>
+    </style>
+
+    <style name="QIBusSoftui.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="QIBusSoftui.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="FullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/QIBus_softui_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/QIBus_softui_colorPrimaryDark</item>
+        <item name="colorAccent">@color/QIBus_softui_colorAccent</item>
+        <item name="android:fontFamily">@font/googlesansregular</item>
+        <item name="android:homeAsUpIndicator">@drawable/qibus_softui_ic_keyboard_backspace_black
+        </item>
+        <item name="colorControlActivated">@color/QIBus_softui_colorPrimary</item>
+    </style>
+
+    /* Rating bar theme */
+
+    <style name="RatingBar" parent="Theme.MaterialComponents">
+        <item name="colorControlNormal">@color/QIBus_softui_rating</item>
+        <item name="colorControlActivated">@color/QIBus_softui_rating</item>
+    </style>
+
+    /* Toolbar theme */
+
+    <style name="Toolbar">
+        <item name="android:fontFamily">@font/googlesansextrabold</item>
+    </style>
+
+    /* Dialog animation */
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/qibus_softui_anim_slide_up</item>
+        <item name="android:windowExitAnimation">@anim/qibus_softui_anim_slide_bottom</item>
+    </style>
+
+    /* bottom navigation theme */
+
+    <style name="bottomnavigation" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/QIBus_softui_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/QIBus_softui_colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/QIBus_softui_colorPrimary</item>
+        <item name="colorControlHighlight">@color/QIBus_softui_colorPrimaryRipple</item>
+    </style>
+
+
+    <style name="IQBUSSoftUIScreenBackground">
+        <item name="android:background">#f2f4ff</item>
+    </style>
+
+    <style name="IQBUSSoftUIDrawableBackground">
+        <item name="android:background">@drawable/qibus_softu_ic_card_new</item>
+    </style>
+
+    <style name="IQBUSSoftUIDrawableBackgroundBotton">
+        <!--<item name="android:background">@drawable/button_effect</item>-->
+    </style>
+
+</resources>
